@@ -1,0 +1,189 @@
+@import '@/assets/scss/_colors.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.prototype {
+    /*background-color: aqua;*/
+    width: 913px;
+    height: 301px;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 182px;
+    margin-left: 146px;
+}
+
+.conectOverviweCard {
+    position: static;
+    width: 269px;
+    height: 200px;
+    left: 38px;
+    top: 0px;
+
+    filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.05));
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 15px;
+
+    /*background-color: blueviolet;*/
+}
+
+.conectaTooltip {
+    position: absolute;
+    width: 269px;
+    height: 63px;
+    background: #203b43;
+    border-radius: 8px;
+}
+
+.arrow {
+    position: absolute;
+    width: 26.29px;
+    height: 8.62px;
+    right: 14.13px;
+    bottom: -8.25px;
+
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 25px solid #203b43;
+}
+
+.conectaIcon {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    right: 37px;
+    top: 82.23px;
+    color: #608289;
+}
+
+.wrap {
+    margin-top: 36px;
+    margin-left: 20px;
+}
+
+.prototype {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: relative;
+
+    /*background-color: aqua;*/
+}
+
+.card {
+    height: 127.23px;
+    width: 240px;
+    margin-left: 12px;
+    margin-top: 72.233154296875px;
+    background: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    float: left;
+}
+
+.hint {
+    /* hint */
+
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    top: 10px;
+    bottom: 17px;
+
+    font-family: "DMSans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+    /* or 17px */
+
+    /* White */
+    color: #ffffff;
+}
+
+.symbol {
+    /* symbol */
+
+    position: absolute;
+    width: 55.37px;
+    height: 55.37px;
+    left: 32px;
+    top: 108.23px;
+}
+
+.circle {
+    opacity: 0.3;
+}
+
+
+#icon {
+    position: absolute;
+    left: 4.58%;
+    right: 4.58%;
+    top: 12.92%;
+    bottom: 12.92%;
+    opacity: 1;
+}
+
+
+.value {
+    position: absolute;
+    left: 36.8%;
+    right: 13.75%;
+    top: 55.62%;
+    bottom: 26.88%;
+
+    font-family: "DMSans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 110%;
+    /* or 35px */
+
+    display: flex;
+    align-items: center;
+
+    /* Darken-2 */
+
+    color: #203b43;
+}
+
+.label {
+    /* label */
+
+    position: absolute;
+    left: 36.8%;
+    right: 13.75%;
+    top: 74.12%;
+    bottom: 18.38%;
+
+    font-family: "DMSans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    /* or 22px */
+
+    display: flex;
+    align-items: center;
+
+
+    /* Lighten-1 */
+
+    color: #88979b;
+}
+
+.v-application .info {
+    background-color: #FFFFFF !important;
+    border-color: #FFFFFF !important;
+}
