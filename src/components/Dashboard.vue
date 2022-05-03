@@ -4,15 +4,15 @@
       <v-col cols="12" class="teste">
         <div class="prototype">
           <div class="conectOverviweCard" v-for="(dado, i) in dados" :key="i">
-            <div v-show="active" class="conectaTooltip">
+            <div v-if="i==active" class="conectaTooltip">
               <p class="hint">{{dado.legenda}}</p>
               <div class="arrow"></div>
             </div>
             <div class="conectaIcon">
               <v-icon
                 class="info"
-                @mouseover="mouseOver"
-                @mouseleave="mouseLeave"
+                @mouseover="mouseOver(i)"
+                @mouseleave="mouseLeave()"
               >mdi-information-outline</v-icon>
             </div>
             <div class="card">
@@ -40,7 +40,7 @@ export default {
 
   data() {
     return {
-      active: false,
+      active: null,
 
       dados: [
         {
@@ -71,11 +71,11 @@ export default {
   },
 
   methods: {
-    mouseOver: function () {
-      this.active = true;
+    mouseOver: function (i) {
+      this.active = i;
     },
     mouseLeave: function () {
-      this.active = false;
+      this.active = null;
     },
   },
 };
